@@ -13,6 +13,8 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    
 });
 
 // Floating label headings for the contact form
@@ -30,3 +32,17 @@ $(function() {
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
+
+$(document).ready(function(){
+    $('[data-autoheight="true"]').css('height', $(window).height());
+
+});
+
+$('#header-cta').click(function() {
+    $(window).scrollTo("section#about", 800, {offset:-80});  
+});
+
+$('#contact-aiesec').click(function() {
+    $(window).scrollTo("footer", 800, {offset:-80});  
+});
+

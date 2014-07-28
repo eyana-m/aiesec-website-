@@ -39,7 +39,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 hr.star-light,
@@ -89,7 +89,12 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    /*background: #18bc9c;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 header .container {
@@ -179,7 +184,11 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
-    min-height: 200px;
+    min-height: 180px;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 section h2 {
@@ -283,10 +292,7 @@ section.yellow{
     transition: all .3s ease-in-out;
 }
 
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
+.btn-outline:hover {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
@@ -301,19 +307,16 @@ section.yellow{
     transition: all .3s ease-in-out;
 }
 
-.btn-outline-invert:hover,
-.btn-outline-invert:focus,
-.btn-outline-invert:active,
-.btn-outline-invert.active {
+.btn-outline-invert:hover {
     border: solid 2px #18bc9c;
     color: #18bc9c;
-    background: #fff;
+    
 }
 
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
-    padding-bottom: .5em;
+    padding-bottom: 0;
     border-bottom: 1px solid #eee;
 }
 
@@ -325,17 +328,18 @@ section.yellow{
     padding-left: 0;
     border: 0;
     border-radius: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     background: 0 0;
     box-shadow: none!important;
     resize: none;
+    color: #fff;
 }
 
 .floating-label-form-group label {
     display: block;
     z-index: 0;
     position: relative;
-    top: 2em;
+    top: 1em;
     margin: 0;
     font-size: .85em;
     line-height: 1.764705882em;
@@ -412,6 +416,11 @@ footer .footer-below {
     bottom: 2%;
     width: 50px;
     height: 50px;
+    display:none;
+    transition: display 0.3s ease-in-out;
+    -webkit-transition: display 0.3s ease-in-out;
+    -o-transition: display 0.3s ease-in-out;
+    -moz-transition: display 0.3s ease-in-out;
 }
 
 .scroll-top .btn {
@@ -483,4 +492,12 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.logo{
+    font-size: 3em;
+    color: rgb(132, 132, 132);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
 }
