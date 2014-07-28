@@ -16,6 +16,12 @@ p.small {
     font-size: 16px;
 }
 
+em {
+    font-family: Georgia;
+    font-weight: 400;
+    text-transform: none;
+}
+
 a,
 a:hover,
 a:focus,
@@ -191,6 +197,14 @@ section.warning {
     background: #C4594A;
 }
 
+section.gray {
+    color: #fff;
+    background: rgb(183, 183, 183);
+}
+
+section.yellow{
+    background: #C4C15F;
+}
 
 
 @media(max-width:767px) {
