@@ -283,12 +283,40 @@ section.yellow{
     }
 }
 
+.heading{
+    margin-bottom: 4em;
+    line-height: 1.5em
+}
+
+.subheading{
+    
+    font-size: 1.2em;  
+    border-bottom: 2px solid #2c3e50;
+    
+}
+
+.subheading a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.subheading a:hover{
+    text-decoration: none;
+    color: rgb(92, 135, 33);
+}
+
+.subheading:hover{
+    border-bottom: 2px solid rgb(92, 135, 33);
+}
+
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
     font-size: 20px;
     color: #fff;
     background: 0 0;
+    outline: 0;
     transition: all .3s ease-in-out;
 }
 
@@ -303,14 +331,14 @@ section.yellow{
     border: solid 2px rgb(44, 62, 80);
     font-size: 20px;
     color: rgb(44, 62, 80);
-    background: 0 0;
+    background: transparent;
     transition: all .3s ease-in-out;
+    outline: 0;
 }
 
 .btn-outline-invert:hover {
     border: solid 2px #18bc9c;
     color: #18bc9c;
-    
 }
 
 .floating-label-form-group {

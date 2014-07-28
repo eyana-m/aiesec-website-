@@ -33,10 +33,8 @@ $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
 
-$(document).ready(function(){
-    $('[data-autoheight="true"]').css('height', $(window).height());
 
-});
+$('[data-autoheight="true"]').css('height', $(window).height());
 
 $('#header-cta').click(function() {
     $(window).scrollTo("section#about", 800, {offset:-80});  
@@ -44,5 +42,6 @@ $('#header-cta').click(function() {
 
 $('#contact-aiesec').click(function() {
     $(window).scrollTo("footer", 800, {offset:-80});  
+
 });
 
