@@ -31,8 +31,7 @@ var cbpAnimatedHeader = (function() {
 			$('.scroll-top').show();
 		}
 		else {
-			classie.remove( header, 'navbar-shrink' );
-			
+			classie.remove( header, 'navbar-shrink' );		
 			$('.scroll-top').hide();
 
 		}
