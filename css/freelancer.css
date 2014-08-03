@@ -102,6 +102,11 @@ header .container {
     padding-bottom: 50px;
 }
 
+@media (min-width: 768px){
+    .container{
+        width: 960px;
+    }
+}
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -442,7 +447,7 @@ footer .footer-below {
     z-index: 1049;
     position: fixed;
     right: 2%;
-    bottom: 2%;
+    bottom: 12%;
     width: 50px;
     height: 50px;
     display:none;
@@ -452,7 +457,22 @@ footer .footer-below {
     -moz-transition: display 0.3s ease-in-out;
 }
 
-.scroll-top .btn {
+.scroll-down{
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
+    width: 50px;
+    height: 50px;
+    display:none;
+    transition: display 0.3s ease-in-out;
+    -webkit-transition: display 0.3s ease-in-out;
+    -o-transition: display 0.3s ease-in-out;
+    -moz-transition: display 0.3s ease-in-out;
+}
+
+.scroll-top .btn,
+.scroll-down .btn {
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -460,7 +480,8 @@ footer .footer-below {
     line-height: 28px;
 }
 
-.scroll-top .btn:focus {
+.scroll-top .btn:focus 
+.scroll-down .btn:focus{
     outline: 0;
 }
 

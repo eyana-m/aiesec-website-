@@ -29,10 +29,12 @@ var cbpAnimatedHeader = (function() {
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
 			$('.scroll-top').show();
+			$('.scroll-down').show();
 		}
 		else {
 			classie.remove( header, 'navbar-shrink' );		
 			$('.scroll-top').hide();
+			$('.scroll-down').hide();
 
 		}
 		didScroll = false;
